@@ -83,7 +83,7 @@ persistence:
     # Optionally specify claimName to manually override the PVC to be used for
     # the data directory. If claimName is specified, storageClass and size are
     # ignored.
-    #claimName: "plexserver-pvc-data"
+    claimName: "plexserver-pvc-data"
     # Optionally specify a storage class to be used for the data directory.
     # If not specified and claimName is not specified, the default storage
     # class will be used.
@@ -91,7 +91,7 @@ persistence:
     # subPath: some-subpath
     # The requested size of the volume to be used when creating a
     # PersistentVolumeClaim.
-    size: 40Gi
+    size: 2Ti
     # Access mode for this volume
     accessMode: ReadWriteMany
   extraData: []
