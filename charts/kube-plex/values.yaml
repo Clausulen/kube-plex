@@ -83,7 +83,7 @@ persistence:
     # Optionally specify claimName to manually override the PVC to be used for
     # the data directory. If claimName is specified, storageClass and size are
     # ignored.
-    claimName: "plexserver-pvc-data"
+    #claimName: "plexserver-pvc-data"
     # Optionally specify a storage class to be used for the data directory.
     # If not specified and claimName is not specified, the default storage
     # class will be used.
@@ -98,10 +98,10 @@ persistence:
     # Optionally specifify additional Data mounts.  These will be mounted as
     # /data-${name}.  This should be in the same format as the above 'data', 
     # with the additional field 'name'
-    - claimName: "plexserver2-pvc-data"
-    name: 'UlsteinflixEx2'
-    - claimName: "plexserver3-pvc-data"
-    name: 'UlsteinflixEx3'
+    #- claimName: "plexserver2-pvc-data"
+    #name: 'UlsteinflixEx2'
+    #- claimName: "plexserver3-pvc-data"
+    #name: 'UlsteinflixEx3'
 
   config:
     # Optionally specify claimName to manually override the PVC to be used for
