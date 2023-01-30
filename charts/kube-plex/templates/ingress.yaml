@@ -19,10 +19,13 @@ spec:
     - host: {{ $host }}
       http:
         paths:
-          - path: /
+          - path: /web
+            pathType: Prefix
             backend:
-              serviceName: {{ $serviceName }}
-              servicePort: pms
+              service:
+                name: {{ $serviceName }}
+                port: 
+                  name: pms
     {{- end -}}
   {{- if .Values.ingress.tls }}
   tls:
