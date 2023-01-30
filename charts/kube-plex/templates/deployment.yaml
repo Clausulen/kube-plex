@@ -70,14 +70,14 @@ spec:
 {{- end }}
         readinessProbe:
           httpGet:
-            path: /identity
+            path: /
             port: pms
           initialDelaySeconds: 59
           failureThreshold: 10
           timeoutSeconds: 5
         livenessProbe:
           httpGet:
-            path: /identity
+            path: /
             port: pms
           initialDelaySeconds: 59
           failureThreshold: 10
